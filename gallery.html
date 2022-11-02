@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stylesforgallary.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nathan Kidanemariam Gallery</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+        <script src="https://kit.fontawesome.com/b34eebfa10.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <div class="details">
+                <h1><span>GALLERY</span></h1>
+                <h2> Photos from my Everyday Life<br>Enjoy!<br></h2>
+                <div class="blink">
+
+                </div>
+
+            </div>
+     
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+        <img src="images2/FB_IMG_1657419570622.jpg" style="width:50%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+          <img src="images2/Band.jpg" style="width:100%">
+      </div>
+
+    <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+          <img src="images2/soccer.png" style="width:90%">
+      </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+        <img src="images2/ESFNA.jpg" style="width:50%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+        <img src="images2/Ethiopia.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+        <img src="images2/Ethiopia2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+        <img src="images2/Ethiopia3.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+        <img src="images2/Arsenal.jpg" style="width:70%">
+    </div>
+    <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+          <img src="images2/Presidential campaign.png" style="width:70%">
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images2/FB_IMG_1657419570622.jpg" style="width:100%" onclick="currentSlide(1)" alt="My Great-Grandfather">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/Band.jpg" style="width:100%" onclick="currentSlide(1)" alt="Saint Anthony's School Band or as I like to say, 'The team that got 1st place' I'm sitting in between the two other saxophonists." >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/soccer.png" style="width:100%" onclick="currentSlide(2)" alt="Varsity Seniors Team Photo">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/ESFNA.jpg" style="width:100%" onclick="currentSlide(2)" alt="ESFNA where I ran a 5K. Photo: left to right: Me, Assefa Mezgebu (famous ethiopian runner), and my dad">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/Ethiopia.jpg" style="width:100%" onclick="currentSlide(3)" alt="Making dried Peppers in the family farmhouse in Ethiopia">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/Ethiopia2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Having dinner with my family in Addis Ababa">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/Ethiopia3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Beautiful photo capturing the front end of the farmhouse">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/Arsenal.jpg" style="width:100%" onclick="currentSlide(6)" alt="Arsenal game against Everton here in the U.S.">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images2/Presidential campaign.png" style="width:100%" onclick="currentSlide(6)" alt="Meeting during Presidential Campaigns in Junior year">
+    </div>
+  </div>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+      
+    </body>
+</html> 
