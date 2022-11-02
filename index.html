@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nathan Kidanemariam Home</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+        <script src="https://kit.fontawesome.com/b34eebfa10.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container"></div>
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+             <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about me">About Me</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#images">Project Images</a></li>
+                <li><a href="#resume">Resume</a></li>  
+                <li><a href="#contact">Contact</a></li>  
+                <li><a href="#Gallery">Gallery</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i> 
+             </ul>
+             <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="details">
+                <p></p>
+                <h1>Hey! I'm <span>Nathan Kidanemariam</span></h1>
+            </div>
+     
+        </div>
+        <div id="about me">
+            <div class="container">
+                <div class="row">
+                    <div class="about-1">
+                        <img src="images/Nate.png">
+                    </div>
+                    <div class="about-2">
+                        <h1 class="title2">About Me</h1>
+                        <p>Placeholder</p>
+
+                        <div class="titles3">
+                            <p class="link active-link" onclick="opentab('me')">Me</p>
+                            <p class="link"   onclick= "opentab('skills')">Education</p>
+                            <p class="link"  onclick="opentab('interests')">Interests</p>
+                            <p class="link"   onclick="opentab('projects')">Projects</p>
+                        </div>
+                        <div class="link-contents active-tab" id="me">
+                            <p class="desc">Hello! My name is Nathan Kidanemariam and I'm a senior at <a href="https://www.saintanselms.org/" target="_blank">Saint Anselm's Abbey School</a> in Washington D.C. I live for programming and creating things such as an Ardunio Shield Bot and Smart Glasses. This year I've attained my HTML Certification after 300 hours of coursework and I've also gotten my Google Ads certification for business adverisement strategies. Outside of research, I love playing soccer (emphasis on the love), and I also enjoy tennis, baskeball, playing the saxophone, debating, and creative writing.</p>
+                            <p class="desc1">
+                                <b>Programming-</b> I first felt called to programming when I saw my father working on numerous projects from work such as PLC programming and escalator repair. While I didn't understand things at that time, I realized that I wanted to be part of slow but steady technological advancement of our era. To this extent, I worked with my dad to understand the basic concepts of HTML, Java, and C++ while also learning ladder logic, a PLC language. On my own, I took courses and exams online to learn more, which is why I've been able to add Python as one of my new Langauges. I've also been doing different projects for outside reinforcement.
+                            </p>
+                            <p class="desc2">
+                              
+                            </p>
+                        </div>
+                        <div class="link-contents" id="skills">
+                            <ul>
+                                <li><span><a href="https://www.stanthonyschooldc.org/" target="_blank">Saint Anthony Catholic School</a></span><br>1st grade - 8th grade</li>
+                                <li><span><a href="https://www.saintanselms.org/" target="_blank">Saint Anselm's Abbey School</a></span><br>9th grade - 12th grade</li>
+                            </ul>
+                        </div>
+                        <div class="link-contents" id="interests">
+                            <ul>
+                                <li><span>Soccer</span><br>Ever since my father placed me infront of the TV to watch a liverpool game, I fell in love with the sport and played whenever I could get a chance. So far I've played throughout my middle school years and High school years, except sophomore year due to COIVD. Unfortuntely for my dad, I'm a huge Manchester United supporter and Saturday's and Sunday's are intense for us because every team plays then. </li>
+                                <li><span>Basketball</span><br>I began following basketball during my middle school years and I've loved watching it. I didn't play for team since it coinsided with the end of soccer season. I always make sure to be there when the school team has a game because just like my friends come to my games, I'd like to be there for their's as well. I used to be a Cavaliers fan but these days I've switched to supporting Ja Morant and the Grizzles make history.</li>
+                                <li><span>Tennis</span><br>Since my best friend didn't want to be alone during a tennis intrest meeting, he forced me to come with him and as a result I realized that I might be good at tennis so instead of joining the team, I decided to play recreational to develop a sense of the game and currently, I'm working on making the varsity team.</li>
+                                <li><span>Creative Writing</span><br>I've taken my hand at creative writing since middle school because I was interested in becoming the director of a movie. I've written several scripts, short stories, and formal essays to prepare me for that journey, but I scrapped the idea when computer science came knocking. Today I'm a contributer to the <a href="https://priory.press/">Priory Press</a>, our school student publication</li>
+                                <li><span>Cooking</span><br>Since my family grills often, my father has made me somewhat of a meat connoisseur. I joined the barbecue club in 9th grade hoping to be the head chef but Unfortuntely, new members had to begin as dishwashers. Additionally, that same year COVID hit and I wasn't able to go up the ranks. I enjoy making traditional Ethiopian food and would love to try making dishes from other cultures soon.</li>
+                                <li><span>Band</span><br>I've been playing the Saxophone since 4th grade and I've grown quite fond of it. At first, I didn't understand why my parents signed me up but after a couple of months, I knew that it was the right place for me. While I couldn't participate in the annual Band festival, since 4th graders couldn't be in advanced band, I practiced during the breaks hoping I'd get in the next year. Since then, I've played at each Band Festival and during my 8th grade year, we won 1st place after getting 2nd place the previous year. </li>
+                            </ul>
+                        </div>
+                        <div class="link-contents" id="projects">
+                            <ul>
+                                <li><span>Smart Glasses</span><br>9th-12th grades</li>
+                                <li><span>Ardunio Door Opener</span><br>10th-12th grades</li>
+                                <li><span>Black Jack</span><br>12th grade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <div id="works">
+        <div class="container">
+            <h1 class="subtitle">Best Works</h1>
+            <div class="works-list">
+                <div>
+                    <i class="fa-solid fa-glasses"></i>
+                    <h2>Smart Glasses</h2>
+                    <p>Made with Raspberry Pi, OLED MODULE, and Espeak</p>
+                    <a href="#">Learn more (COMING SOON)</a>
+    
+                </div>
+                <div>
+                    <i class="fa-solid fa-door-open"></i>
+                    <h2>Arduino Door Opener</h2>
+                    <p>Made with Arduino Uno, Servo Motors, and KeyPad</p>
+                    <a href="#">Learn more (COMING SOON)</a>
+    
+                </div>
+                <div>
+                    <i class="fa-solid fa-diamond"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>Black Jack</h2>
+                    <p>Made with Eclipse IDE</p>
+                    <a href="#">Learn more (COMING SOON)</a>
+    
+                </div>
+            </div>
+        </div>
+     </div>
+     <div id="images">
+        <div class="container">
+            <h1 class="sub-title">Project Images</h1>
+            <div class="images-list">
+                <div class="pictures">
+        </div>
+     </div>
+     </div>
+
+
+
+
+
+
+
+
+
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="images/Blackjack.png" style="width:100%">
+      <div class="text">Black Jack game created through Eclipse IDE </div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="images/pi.png" style="width:100%">
+      <div class="text">Configuring the Wireless Networks for Raspberry pi</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="images/Blackjack2.png" style="width:100%">
+      <div class="text">Setting the GUI on Eclipse IDE</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="images/glasses.png" style="width:100%">
+        <div class="text">3D design of frame of glasses</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="images/Glasses_code2.jpg" style="width:100%">
+        <div class="text">Downloading Necessary Libraries on Rasbperry Pi</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <video width="970" controls>
+            <source src="images/Glasses_code.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <video width="800" controls>
+            <source src="images/Untitled.mp4" type="video/mp4">
+        </video>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+  </div>
+
+
+
+
+
+
+
+
+
+
+     <div id="resume">
+            <div class="container">
+                <h1 class="sub-title">Resume</h1>
+                <div class="resume-list">
+                    <div class="download"></div>
+                    <a href="Nathan Kidanemariam_Resume.docx">Download My Resume</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Gallery">
+        <div class="container">
+            <h1 class="sub-title">Gallery</h1>
+            <div class="Gallery-list">
+                <div class="pictures"></div>
+                <a href="gallery.html" target="_blank">Click Here For Gallery</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+   
+
+   
+
+
+
+
+
+
+
+
+
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-1">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i>Kidanemariamnate@gmail.com</p>
+                        <p>or</p>
+                        <p><i class="fa-solid fa-phone"></i>240-610-8232</p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/nate_a_k/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-2">
+                        <form name="submit-to-google-sheet">
+                            <input name="Name" type="text" placeholder="Please Type Your Name" required>
+                            <input name="Email" type="email" placeholder="Please Enter Your Email" required>
+                            <textarea name="Text" rows="12" placeholder="Please Enter Your Message"></textarea>
+                            <button type="submit" class="btn-2">Submit</button>
+                        </form>
+                        <span id="message"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Nathan Kidanemariam</p>
+                <p>Last updated September 2022</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script>
+            var link = document.getElementsByClassName("link");
+            var linkcontents = document.getElementsByClassName("link-contents");
+            function opentab(tabname){
+                for(tablink of link){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of linkcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        </script>
+        <script>
+            var sidem = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidem.style.right = "0";
+            }
+            function closemenu(){
+                sidem.style.right = "-200px";
+            }
+        </script>
+
+
+
+
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw6ugQFUkFEauDIBZbyKa3qlw3639g2-zteyqp6H_itgyqtxF5hJ8Suz5R3_BYdopet/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const message = document.getElementById("message")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    message.innerHTML = "Message was sent Successfully"
+                    setTimeout(function(){
+                        message.innnerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+          <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+
+
+
+          </script>
+    </body>
+</html> 
